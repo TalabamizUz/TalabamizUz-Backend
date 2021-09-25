@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>TalabamizUz.Core</AssemblyName>
+    <RootNamespace>TalabamizUz.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TalabamizUz.Data\TalabamizUz.Data.csproj" />
+    <ProjectReference Include="..\TalabamizUz.Domain\TalabamizUz.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

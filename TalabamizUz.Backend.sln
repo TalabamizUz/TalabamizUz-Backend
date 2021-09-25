@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalabamizUz.Backend", "TalabamizUz.Backend\TalabamizUz.Backend.csproj", "{5541E3E9-E52E-44BF-88D7-3504293E4B71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalabamizUz.Api", "TalabamizUz.Backend\TalabamizUz.Api.csproj", "{5541E3E9-E52E-44BF-88D7-3504293E4B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalabamizUz.Domain", "TalabamizUz.Domain\TalabamizUz.Domain.csproj", "{575B9423-44B3-45E3-A42D-1D13A3545411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalabamizUz.Core", "TalabamizUz.Service\TalabamizUz.Core.csproj", "{A2FDE68B-B01D-449A-AA17-E870CEE9C946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalabamizUz.Data", "TalabamizUz.Data\TalabamizUz.Data.csproj", "{25786DA7-B689-4752-A624-0899C859702A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{5541E3E9-E52E-44BF-88D7-3504293E4B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5541E3E9-E52E-44BF-88D7-3504293E4B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5541E3E9-E52E-44BF-88D7-3504293E4B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575B9423-44B3-45E3-A42D-1D13A3545411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575B9423-44B3-45E3-A42D-1D13A3545411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575B9423-44B3-45E3-A42D-1D13A3545411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575B9423-44B3-45E3-A42D-1D13A3545411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FDE68B-B01D-449A-AA17-E870CEE9C946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FDE68B-B01D-449A-AA17-E870CEE9C946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FDE68B-B01D-449A-AA17-E870CEE9C946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FDE68B-B01D-449A-AA17-E870CEE9C946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25786DA7-B689-4752-A624-0899C859702A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25786DA7-B689-4752-A624-0899C859702A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25786DA7-B689-4752-A624-0899C859702A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25786DA7-B689-4752-A624-0899C859702A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
