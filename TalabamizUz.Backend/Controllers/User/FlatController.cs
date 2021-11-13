@@ -56,7 +56,7 @@ namespace TalabamizUz.Api.Controllers.User
         {
             string directoryPath = Path.Combine(_env.WebRootPath, "Images/Flat/");
             byte[] image = await _flatService.GetFlatImage(directoryPath, flatId);
-            return File(image, "application/jpeg");
+            return File(image, "application/octet-stream", "image.png");
         }
     }
 }

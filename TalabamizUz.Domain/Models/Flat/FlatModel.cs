@@ -16,7 +16,7 @@ namespace TalabamizUz.Domain.Models.Flat
         public int Id { get; set; }
 
         [Column("user_id")]
-        public string UserId { get; set; }
+        public int UserId { get; set; }
 
         [Column("floor_number")]
         public int FloorNumber { get; set; }
