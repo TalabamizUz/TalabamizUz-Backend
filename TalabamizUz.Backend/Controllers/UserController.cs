@@ -37,5 +37,12 @@ namespace TalabamizUz.Api.Controllers
             var models = _mapper.Map<IEnumerable<UserWithoutPassword>>(users);
             return Ok(models);
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> PostAnnouncement()
+        {
+           var users  = await _userService.po
+        }
     }
 }

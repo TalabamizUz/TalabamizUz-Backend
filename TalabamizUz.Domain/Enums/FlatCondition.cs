@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TalabamizUz.Domain.Enums
 {
-    public enum Role
+    public enum FlatCondition
     {
-        Customer = 1,
-        Host = 2,
-        Admin = 3
+        red,
+        green,
+        blue,
     }
 }
