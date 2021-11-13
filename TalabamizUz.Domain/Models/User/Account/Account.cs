@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using TalabamizUz.Domain.Enums;
 
-namespace TalabamizUz.Domain.Models.Account
+namespace TalabamizUz.Domain.Models.User.Account
 {
     [Table("account")]
-    public class Accoaunt
+    public class Account
     {
         [Column("id")]
         public int Id{  get; set; }

@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TalabamizUz.Domain.Enums
+namespace TalabamizUz.Domain.Enums.User
 {
-    public enum FlatCondition
+    public enum FlatType
     {
-        red,
-        green,
-        blue,
+        sell,
+        rent
     }
 }

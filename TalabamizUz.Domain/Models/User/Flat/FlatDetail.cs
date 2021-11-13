@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TalabamizUz.Domain.Models.Flat
+namespace TalabamizUz.Domain.Models.User.Flat
 {
     [Table("flat_detail")]
-    class FlatDetail
+    public class FlatDetail
     {
         [Column("id")]
         public int Id {  get; set; }

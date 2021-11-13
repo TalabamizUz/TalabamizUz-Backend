@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TalabamizUz.Domain.Enums
+namespace TalabamizUz.Domain.Enums.User
 {
-    public enum TargetClientType
+    public enum RoleType
     {
-        girl,
-        boy,
-        family
+        admin,
+        landLord,
+        student
     }
 }

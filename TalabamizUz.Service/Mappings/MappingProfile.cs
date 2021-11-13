@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TalabamizUz.Domain.Models.Account;
+using TalabamizUz.Domain.Models.User;
 
 namespace TalabamizUz.Core.Mappings
 {
@@ -12,9 +12,9 @@ namespace TalabamizUz.Core.Mappings
     {
         public MappingProfile()
         {
-            CreateMap<UserForCreate, User>().ReverseMap();
-            CreateMap<User, UserWithoutPassword>().ReverseMap();
-            CreateMap<IEnumerable<User>, IEnumerable<UserWithoutPassword>>().ReverseMap();
+            //CreateMap<UserForCreate, User>().ReverseMap();
+            //CreateMap<User, UserWithoutPassword>().ReverseMap();
+            //CreateMap<IEnumerable<User>, IEnumerable<UserWithoutPassword>>().ReverseMap();
         }
     }
 }

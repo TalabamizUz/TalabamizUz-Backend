@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TalabamizUz.Domain.Enums;
 
-namespace TalabamizUz.Domain.Models.Flat
+namespace TalabamizUz.Domain.Models.User.Flat
 {
     [Table("flat")]
     public class Flat

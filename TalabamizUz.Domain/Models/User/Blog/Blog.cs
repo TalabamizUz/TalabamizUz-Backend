@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TalabamizUz.Domain.Models.Blog
+namespace TalabamizUz.Domain.Models.User.Blog
 {
     [Table("blog")]
    public class Blog
