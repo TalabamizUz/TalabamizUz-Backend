@@ -35,6 +35,17 @@ namespace TalabamizUz.Backend
             services.AddDbContext<TalabamizDbContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("HerokuConnectionString")));
 
+            // CORS
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -51,7 +62,7 @@ namespace TalabamizUz.Backend
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsProduction())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
@@ -61,6 +72,7 @@ namespace TalabamizUz.Backend
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
