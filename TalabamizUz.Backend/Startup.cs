@@ -35,6 +35,17 @@ namespace TalabamizUz.Backend
             services.AddDbContext<TalabamizDbContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("HerokuConnectionString")));
 
+            // CORS
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("AllowALl", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -61,6 +72,7 @@ namespace TalabamizUz.Backend
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
