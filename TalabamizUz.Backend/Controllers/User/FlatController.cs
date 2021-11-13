@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using System.Threading.Tasks;
@@ -41,10 +42,12 @@ namespace TalabamizUz.Api.Controllers.User
         }
 
         [HttpPost]
-        public async Task<IActionResult> SetFlatImage(int flatId, byte[] flatImage)
+        public async Task<IActionResult> SetFlatImage(int flatId, IFormFile file)
         {
             string directoryPath = Path.Combine(_env.WebRootPath, "Images/Flat/");
-            await _flatService.SetFlatImage(directoryPath, flatId, flatImage);
+            MemoryStream stream = new MemoryStream();
+            await file.OpenReadStream().CopyToAsync(stream);
+            await _flatService.SetFlatImage(directoryPath, flatId, stream.ToArray());
             return Ok(true);
         }
 
