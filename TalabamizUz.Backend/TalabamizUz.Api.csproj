@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Admin\" />
-    <Folder Include="Controllers\User\" />
     <Folder Include="Controllers\SuperAdmin\" />
   </ItemGroup>
 

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TalabamizUz.Domain.Enums;
+using TalabamizUz.Domain.Enums.User;
 
 namespace TalabamizUz.Domain.Models.User.Account
 {
@@ -30,5 +30,8 @@ namespace TalabamizUz.Domain.Models.User.Account
 
         [Column("role")]
         public RoleType Role {  get; set; }
+
+        [Column("university_id")]
+        public int UniversityId { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TalabamizUz.Domain.Enums;
+using TalabamizUz.Domain.Enums.User;
 
 namespace TalabamizUz.Domain.Models.User.Flat
 {
@@ -13,6 +14,9 @@ namespace TalabamizUz.Domain.Models.User.Flat
     {
         [Column("id")]
         public int Id {  get; set; }  
+
+        [Column("user_id")]
+        public int UserId {  get; set; }
         
         [Column("floor_number")]
         public int FloorNumber {  get; set; }  

@@ -12,9 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TalabamizUz.Core.Interfaces;
 using TalabamizUz.Core.Mappings;
-using TalabamizUz.Core.Services;
 using TalabamizUz.Data.Contexts;
 
 namespace TalabamizUz.Backend
@@ -33,7 +31,7 @@ namespace TalabamizUz.Backend
         {
             // Database Context
             services.AddDbContext<TalabamizDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("ConnectionString")));
+                options.UseNpgsql(Configuration.GetConnectionString("HerokuConnectionString")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -42,7 +40,7 @@ namespace TalabamizUz.Backend
             });
 
             // Custom services
-            services.AddTransient<IUserService, UserService>();
+            
 
             // Automapper
             services.AddAutoMapper(typeof(MappingProfile));
