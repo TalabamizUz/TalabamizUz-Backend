@@ -19,6 +19,8 @@
   <ItemGroup>
     <Folder Include="Controllers\Admin\" />
     <Folder Include="Controllers\SuperAdmin\" />
+    <Folder Include="wwwroot\Images\Blog\" />
+    <Folder Include="wwwroot\Images\Flat\" />
   </ItemGroup>
 
 </Project>

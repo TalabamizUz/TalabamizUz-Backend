@@ -74,6 +74,7 @@ namespace TalabamizUz.Backend
             app.UseRouting();
             app.UseCors("AllowAll");
 
+            app.UseFileServer();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

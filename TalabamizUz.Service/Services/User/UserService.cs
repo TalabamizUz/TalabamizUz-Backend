@@ -34,9 +34,12 @@ namespace TalabamizUz.Core.Services.User
         public async Task DeleteUser(int userId)
         {
             var user = await _dbContext.Accounts.FirstOrDefaultAsync(p => p.Id == userId);
-            
-            if(user is not null)
+
+            if (user is not null)
+            {
                 _dbContext.Accounts.Remove(user);
+                await _dbContext.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<Account>> GetUser()

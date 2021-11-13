@@ -59,9 +59,9 @@ namespace TalabamizUz.Api.Controllers.User
         }
 
         [HttpPost]
-        public async Task<IActionResult> SignIn(string phone, string password)
+        public async Task<IActionResult> SignIn(SignInModel model)
         {
-            var user = await _userService.SignIn(phone, password);
+            var user = await _userService.SignIn(model.Phone, model.Password);
             if (user == null)
                 return NotFound(user);
 
