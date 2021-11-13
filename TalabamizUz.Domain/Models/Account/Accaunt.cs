@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TalabamizUz.Domain.Enums;
 
-namespace TalabamizUz.Domain.Models.Accaunts
+namespace TalabamizUz.Domain.Models.Account
 {
     [Table("account")]
     public class Accoaunt
