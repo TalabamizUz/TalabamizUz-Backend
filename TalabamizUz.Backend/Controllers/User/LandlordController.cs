@@ -57,5 +57,15 @@ namespace TalabamizUz.Api.Controllers.User
             await _userService.DeleteUser(userId);
             return Ok(true);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> SignIn(string phone, string password)
+        {
+            var user = await _userService.SignIn(phone, password);
+            if (user == null)
+                return NotFound(user);
+
+            return Ok(user);
+        }
     }
 }
