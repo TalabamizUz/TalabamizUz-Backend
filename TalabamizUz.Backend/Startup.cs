@@ -38,7 +38,7 @@ namespace TalabamizUz.Backend
             // CORS
             services.AddCors(opt =>
             {
-                opt.AddPolicy("AllowALl", builder =>
+                opt.AddPolicy("AllowAll", builder =>
                 {
                     builder.AllowAnyOrigin()
                         .AllowAnyHeader()
