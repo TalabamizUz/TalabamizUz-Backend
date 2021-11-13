@@ -12,7 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TalabamizUz.Core.Interfaces.User;
 using TalabamizUz.Core.Mappings;
+using TalabamizUz.Core.Services.User;
 using TalabamizUz.Data.Contexts;
 
 namespace TalabamizUz.Backend
@@ -40,7 +42,7 @@ namespace TalabamizUz.Backend
             });
 
             // Custom services
-            
+            services.AddTransient<IUserService, UserService>();
 
             // Automapper
             services.AddAutoMapper(typeof(MappingProfile));

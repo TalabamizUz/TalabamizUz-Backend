@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TalabamizUz.Domain.Models.User.Account;
+using TalabamizUz.Domain.Models.User;
 
 namespace TalabamizUz.Data.Contexts
 {
@@ -15,5 +15,6 @@ namespace TalabamizUz.Data.Contexts
         }
 
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<AccountDetail> AccountDetails { get; set; }
     }
 }

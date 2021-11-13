@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TalabamizUz.Domain.Models.User.Account
+namespace TalabamizUz.Domain.Models.User
 {
     [Table("account_detail")]
    public class AccountDetail

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TalabamizUz.Domain.Enums.User;
 
-namespace TalabamizUz.Domain.Models.User.Account
+namespace TalabamizUz.Domain.Models.User
 {
     [Table("account")]
     public class Account
@@ -21,6 +21,7 @@ namespace TalabamizUz.Domain.Models.User.Account
         [Column("lastname")]
         public string Lastname {  get; set; }
 
+        [Required]
         [Column("phone")]
         public string Phone {  get; set; }
 
@@ -29,9 +30,6 @@ namespace TalabamizUz.Domain.Models.User.Account
         public string Password {  get; set; }
 
         [Column("role")]
-        public RoleType Role {  get; set; }
-
-        [Column("university_id")]
-        public int UniversityId { get; set; }
+        public int Role { get; set; }
     }
 }

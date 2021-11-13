@@ -9,6 +9,7 @@
     <Folder Include="Enums\SuperAdmin\" />
     <Folder Include="Models\Admin\" />
     <Folder Include="Models\SuperAmin\" />
+    <Folder Include="Models\User\Student\" />
   </ItemGroup>
 
 </Project>
