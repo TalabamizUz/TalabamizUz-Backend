@@ -21,7 +21,7 @@ namespace TalabamizUz.Api.Controllers.User
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateFlat([FromForm] FlatModel flat)
+        public async Task<IActionResult> CreateFlat([FromBody] FlatModel flat)
         {
             var result = await _flatService.CreateFlat(flat);
             return Ok(result);
