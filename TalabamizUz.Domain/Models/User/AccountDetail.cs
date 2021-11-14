@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TalabamizUz.Domain.Models.User
 {
-    [Table("account_detail")]
+   [Table("account_detail")]
    public class AccountDetail
     {
         [Column("id")]
@@ -20,15 +20,15 @@ namespace TalabamizUz.Domain.Models.User
         public string Pinfl { get; set; }
 
         [Column("telegram_user_id")]
-        public string TelegramUserId {  get; set; }
+        public int TelegramUserId {  get; set; }
 
         [Column("address")]
         public string Address {  get; set; }
 
         [Column("is_poor")]
-        public bool IsPoor {  get; set; }
+        public bool IsPoor { get; set; } = false;
 
         [Column("is_student")]
-        public bool IsStudent {  get; set; }
+        public bool IsStudent { get; set; } = false;
     }
 }
